@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 import path from "path"
 
@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: import.meta.env.VITE_API_URL, // nest apiurl
+        target: 'https://doubtful-foal-beanie.cyclic.cloud', // nest apiurl
         changeOrigin: true
       },
     },
