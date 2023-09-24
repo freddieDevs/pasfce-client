@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from "path"
 
@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://long-jade-eagle-wear.cyclic.cloud/api', // nest apiurl
+        target: 'https://pleasant-shorts-worm.cyclic.cloud', // nest apiurl
         changeOrigin: true
       },
     },
